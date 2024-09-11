@@ -1,13 +1,83 @@
 body {
+  background: linear-gradient(to top right, hsl(285, 75%, 19%), 
+                            hsl(35, 83%, 46%), hsl(285, 75%, 19%));
+  color: hsl(0, 0%, 90%);
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  border: 2px solid hsl(35, 83%, 46%);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px hsla(290, 85%, 34%, 0.734);
+  padding: 30px;
+  margin: 100px 10px 10px 10px;
+  text-align: center;
+  max-width: 400px;
+  display: inline-block;
+  background-color: hsl(0, 0%, 25%);
+}
+
+.card .card-image {
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .card-title {
+  font-family: Georgia, sans-serif;
+  font-size: x-large;
+  margin: 5px;
+  color: hsl(0, 0%, 90%);
+  text-decoration: underline hsl(0, 0%, 60%);
+}
+
+.card .card-text {
+  font-family: Arial, sans-serif;
+  color: hsl(0, 0%, 85%);
+  text-shadow: 5px, 5px, 5px, hsl(0, 0%, 0%);
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Make the link appear in a bubble with white text instead of blue */
+.githubURL {
+  background-color: hsl(30, 95%, 55%);
+  color: white;
+  padding: 20px 15px; 
+  border-radius: 5px;   
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px hsla(290, 85%, 34%, 0.734);
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+
+}
+
+.githubURL:hover {
+  background-color: hsl(30, 95%, 45%);
+  transform: scale(1.2);
+}
+
+/*Center the logo to the left side of the button*/
+.githubLogo {
+  vertical-align: middle;
+  align-items: center;
+  margin: 1px;
+  margin-left: -15px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.lightDark {
+  vertical-align: top;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
 }
